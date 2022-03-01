@@ -4,7 +4,7 @@
   "builds": [{
     "src": "djangoblog/wsgi.py",
     "use": "@ardnt/now-python-wsgi",
-    "config": { "maxLambdaSize": "30mb", "runtimes": "python3.9" }
+    "config": { "maxLambdaSize": "30mb", "runtime": "python3.9" }
   }],
   "routes": [{
     "src": "/(.*)",
