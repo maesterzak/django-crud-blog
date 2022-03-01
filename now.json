@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "now-django-example",
+  "builds": [{
+    "src": "simplelife/wsgi.py",
+    "use": "@ardnt/now-python-wsgi",
+    "config": { "maxLambdaSize": "30mb", "runtimes": "python3.9" }
+  }],
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "simplelife/wsgi.py"
+  }]
+}

@@ -1,0 +1,49 @@
+body{
+    
+    width: 100vw;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+.post-image-container{
+    height: 60%;
+    width: 100%;
+}
+.post-container-body{
+    height: 30%;
+    width: 100%;
+}
+.post-container-footer{
+    height: 10%;
+    width: 100%;
+}
+.post-detail-image{
+    width: 100%;
+    height: auto;
+}
+.post-detail-body{
+    width: 100%;
+    background-color: beige;
+}
+.dashbaord-post-image{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    
+}
+button{
+    border-radius: 10px;
+    color: white;
+}
+.footer{
+    background-color: black;
+    color:white;
+    height: 5vh;  
+    position: sticky;
+    bottom: 0;  
+}
+.main{
+    min-height: 90vh;
+}

@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+<h1>{{post.title}}</h1>
+<div class="post-detail-image d-flex justify-content-around">
+    <img style="height: 50vh;" class="img-fluid" src={{post.imageURL}} >
+</div>
+<br>
+<div class="post-detail-body container">
+    <span>{{post.body|safe}}</span>
+</div>
+
+
+{% endblock %}

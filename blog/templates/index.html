@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+<h1>home page</h1>
+
+<div class="container">
+    <h4 style="text-decoration: underline;" class="text-center mb-4">Posts</h4>
+
+    <div>
+        <div class="row mt-5 bg-light">
+            {% for post in posts %}
+            <div class="col-12 col-md-4 post-container p-2">
+                <div class="post-image-container">
+                    <img style="width: 100%;height: 100%;" src={{post.imageURL}}>
+                </div>
+                <div class="post-container-body container">
+                    <h3>{{post.title}}</h3>
+                    <span>{{post.body|safe|truncatechars:50}}</span>
+                </div>
+                <div class="post-container-footer container row">
+                    <div class="col-6 col-md-6 d-flex justify-content-start">
+                        <a href="{% url 'post_detail' post.pk %}">Readmore</a>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex justify-content-end">
+                        <span>updated: {{post.updated}}</span>
+                    </div>
+
+                </div>
+
+            </div>
+            {% endfor%}
+        </div>
+
+
+
+    </div>
+</div>
+
+{% endblock %}
