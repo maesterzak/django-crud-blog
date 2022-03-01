@@ -1,4 +1,3 @@
-from turtle import pos, title
 from django.shortcuts import render
 from .models import *
 from django.shortcuts import render
