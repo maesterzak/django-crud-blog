@@ -1,13 +1,9 @@
 {
-  "version": 2,
-  "name": "now-django-example",
   "builds": [{
     "src": "djangoblog/wsgi.py",
-    "use": "@ardnt/now-python-wsgi",
-    "config": { "maxLambdaSize": "30mb", "runtime": "python3.9" }
+    "use": "@ardnt/vercel-python-wsgi"
   }],
-  "routes": [{
-    "src": "/(.*)",
-    "dest": "djangoblog/wsgi.py"
+  "routes" : [{
+    "src" : "/(.*)", "dest":"/djangoblog/wsgi.py"
   }]
 }
