@@ -2,4 +2,4 @@ release: python manage.py makemigrations
 --no-input
 release: python manage.py migrate --no-input
 
-web: gunicorn simplelife.wsgi
+web: gunicorn djangoblog.wsgi
