@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'djangoblog.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-if os.environ['ENVIROMENT'] == "PRODUCTION":
+if os.environ['ENVIRONMENT'] == "PRODUCTION":
     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 else:
     DATABASES = {
