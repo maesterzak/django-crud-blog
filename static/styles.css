@@ -8,11 +8,11 @@ a{
 }
 
 .post{
-    min-height:60vh;
+    min-height:40vh;
     background:pink
 }
 .post-image-container{
-    height: 60%;
+    height: 30vh;
     width: 100%;
 }
 .post-container-body{

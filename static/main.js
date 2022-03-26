@@ -4,12 +4,14 @@ if (document.getElementById("exampleInputBody2") && document.getElementById("exa
         toolbarCanCollapse: true,
         toolbarStartupExpanded: false,
         removePlugins: 'exportpdf',
+
     })
     CKEDITOR.replace('exampleInputBody1', {
         uiColor: '#9AB8F3',
         toolbarCanCollapse: true,
         toolbarStartupExpanded: false,
         removePlugins: 'exportpdf',
+
     })
     
 }
@@ -30,6 +32,7 @@ function modalClick(event){
         
         
         published = collection[3].textContent.toLowerCase()
+
         document.getElementById('exampleInputTitle2').value = title
         document.getElementById('exampleInputBody2').value = body
         document.getElementById('exampleInputId2').value = id

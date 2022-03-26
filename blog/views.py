@@ -35,15 +35,16 @@ def dashboard(request):
             image = request.FILES.get("image")
             title = request.POST.get("title")
             body = request.POST.get("body")
-            print('ooo', body) 
+
             published = request.POST.get("published")
             if published == "true":
                 published = True
             elif published == "false":
-                published = False    
+                published = False
+            print(published)
             if formId == "form1":
                 if title !='' and body !='':
-                    print('image', image)
+
                     post = Post.objects.create(title=title, body=body, published=published, image=image)
                     post.save()
                 else:
