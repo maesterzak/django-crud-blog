@@ -7,6 +7,10 @@ a{
     text-decoration: none;
 }
 
+.post{
+    min-height:60vh;
+    background:pink
+}
 .post-image-container{
     height: 60%;
     width: 100%;

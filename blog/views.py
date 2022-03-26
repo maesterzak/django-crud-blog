@@ -6,10 +6,8 @@ import os
 # Create your views here.
 
 def home(request):
-    message = "meal"
-    
-    posts = Post.objects.all()
-    context = {"message": message, "posts":posts}
+    posts = Post.objects.filter(published = True)
+    context = { "posts":posts}
     return render(request, 'index.html', context)
 
 
@@ -26,6 +24,10 @@ def dashboard(request):
         if procs == "post_delete":
             id = request.POST.get("id")
             w = Post.objects.get(id = id)
+            if w.image:
+                image_path = w.image.path
+                if image_path:
+                    os.remove(image_path)
             w.delete()
             
         elif procs == "form_submit":    

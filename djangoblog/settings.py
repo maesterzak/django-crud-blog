@@ -59,7 +59,13 @@ CKEDITOR_CONFIGS = {
         'height': 'full',
         'width': 'full',
         'removePlugins': 'exportpdf',
-        'toolbarCanCollapse':'true'
+        'toolbarCanCollapse':'true',
+        'extraPlugins': ','.join(
+            [
+                'codesnippet', 'autolink', 'widget', 'html5video',
+
+
+            ]),
     },
 }
 
