@@ -8,15 +8,15 @@ a{
 }
 
 .post{
-    min-height:40vh;
+    min-height:90vh;
     background:pink
 }
 .post-image-container{
-    height: 30vh;
+    height: 50vh;
     width: 100%;
 }
 .post-container-body{
-    height: 30%;
+    height: 20%;
     width: 100%;
 }
 .post-container-footer{
